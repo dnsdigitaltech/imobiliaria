@@ -88,6 +88,12 @@ html, body {
   margin-top: 4px;
   font-weight: 300;
 }
+.dash_login_left_box input::-moz-placeholder {
+  color: #FFFFFF;
+}
+.dash_login_left_box input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
 .dash_login_left_box input::placeholder {
   color: #FFFFFF;
 }
@@ -95,8 +101,6 @@ html, body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
   border-radius: 0px;
 }
 .dash_login_left_box button {
@@ -136,7 +140,7 @@ html, body {
 /** RIGHT */
 .dash_login_right {
   flex-basis: 60%;
-  /*background: url("../images/login.svg") center/cover no-repeat;*/
+  background: url("../images/login.svg") center/cover no-repeat;
   padding: 30px 0;
   background-size: 60%;
 }
@@ -156,5 +160,3 @@ html, body {
     width: 100%;
   }
 }
-
-/*# sourceMappingURL=login.css.map */
