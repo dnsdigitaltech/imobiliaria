@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Admin\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,3 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::prefix('admin')->as('admin.')->group(function () {
+    Route::get('/', [AuthController::class, 'showLoginForm'])->name('login');
+});
+/*Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'name' => 'admin.'], function () {
+    Route::get('/', 'AuthController@showLoginForm')->name('login');
+});*/
+
+//Route::get('importExportView', 'Corporativo\PatioLeilao\Import\ImportExcelController@importExportView');
