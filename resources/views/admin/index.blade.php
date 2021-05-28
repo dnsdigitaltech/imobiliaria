@@ -1,59 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IMOB | Site Control</title>
 
-    <link rel="stylesheet" href="{{ url(mix('backend/assets/css/reset.css')) }}"/>
-    <link rel="stylesheet" href="{{ url(mix('backend/assets/css/boot.css')) }}"/>
-    <link rel="stylesheet" href="{{ url(mix('backend/assets/css/login.css')) }}"/>
-    <link rel="icon" type="image/png" href="{{ url(mix('backend/assets/images/favicon.png')) }}"/>
-    <title>UpAdmin - Site Control</title>
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{ url(mix('backend/assets/plugins/fontawesome-free/css/all.css')) }}">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="{{ url(mix('backend/assets/plugins/icheck-bootstrap/icheck-bootstrap.css')) }}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{ url(mix('backend/assets/css/adminlte.css')) }}">
 </head>
-<body>
-
-<div class="ajax_response"></div>
-
-<div class="dash_login">
-    <div class="dash_login_left">
-        <article class="dash_login_left_box">
-            <header class="dash_login_box_headline">
-                <div class="dash_login_box_headline_logo icon-imob icon-notext"></div>
-                <h1>Login</h1>
-            </header>
-
-            <form name="login" action="" method="post" autocomplete="off">
-                <label>
-                    <span class="field icon-envelope">E-mail:</span>
-                    <input type="email" name="email" placeholder="Informe seu e-mail" required/>
-                </label>
-
-                <label>
-                    <span class="field icon-unlock-alt">Senha:</span>
-                    <input type="password" name="password_check" placeholder="Informe sua senha" required/>
-                </label>
-
-                <button class="gradient gradient-orange radius icon-sign-in">Entrar</button>
-            </form>
-
-            <footer>
-                <p>Desenvolvido por <a href="https://www.upinside.com.br">www.<b>upinside</b>.com.br</a></p>
-                <p>&copy; <?= date("Y"); ?> - Todos os Direitos Reservados</p>
-                <p class="dash_login_left_box_support">
-                    <a target="_blank"
-                       class="icon-whatsapp transition text-green"
-                       href="https://api.whatsapp.com/send?phone=DDI+DDD+TELEFONE&text=Olá, preciso de ajuda com o login."
-                    >Precisa de Suporte?</a>
-                </p>
-            </footer>
-        </article>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <!-- /.login-logo -->
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <a href="#" class="h1"><b>IMOB</b>System</a>
     </div>
+    <div class="card-body">
+      <p class="login-box-msg">Faça login para iniciar sua sessão</p>
 
-    <div class="dash_login_right"></div>
+      <form action="#" method="post">
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="E-mail">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Senha">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember">
+              <label for="remember">
+                Lembrar
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Iniciar</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
 
+      <p class="mb-1">
+        <a href="forgot-password.html">Esqueci a senha</a>
+      </p>
+    </div>
+    <!-- /.card-body -->
+  </div>
+  <!-- /.card -->
 </div>
+<!-- /.login-box -->
 
-<script src="{{ url(mix('backend/assets/js/jquery.js')) }}"></script>
-<script src="{{ url(mix('backend/assets/js/login.js')) }}"></script>
+<!-- jQuery -->
+<script src="{{ url(mix('backend/assets/plugins/jquery/jquery.js')) }}"></script>
+<!-- Bootstrap 4 -->
+<script src="{{ url(mix('backend/assets/plugins/bootstrap/js/bootstrap.bundle.js')) }}"></script>
+<!-- AdminLTE App -->
+<script src="{{ url(mix('backend/assets/js/adminlte.js')) }}"></script>
 </body>
 </html>

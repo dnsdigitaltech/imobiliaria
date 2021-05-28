@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\AuthController;
 */
 Route::prefix('admin')->as('admin.')->group(function () {
     Route::get('/', [AuthController::class, 'showLoginForm'])->name('login');
+    Route::get('home', [AuthController::class, 'home'])->name('home');
 });
 /*Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'name' => 'admin.'], function () {
     Route::get('/', 'AuthController@showLoginForm')->name('login');
