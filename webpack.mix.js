@@ -21,7 +21,11 @@ mix
     .styles('resources/views/admin/assets/plugins/overlayScrollbars/css/OverlayScrollbars.css','public/backend/assets/plugins/overlayScrollbars/css/OverlayScrollbars.css')
     .styles('resources/views/admin/assets/plugins/daterangepicker/daterangepicker.css','public/backend/assets/plugins/daterangepicker/daterangepicker.css')
     .styles('resources/views/admin/assets/plugins/summernote/summernote-bs4.css','public/backend/assets/plugins/summernote/summernote-bs4.css')
-    
+    .styles('resources/views/admin/assets/plugins/datatables-bs4/css/dataTables.bootstrap4.css','public/backend/assets/plugins/datatables-bs4/css/dataTables.bootstrap4.css')
+    .styles('resources/views/admin/assets/plugins/datatables-responsive/css/responsive.bootstrap4.css','public/backend/assets/plugins/datatables-responsive/css/responsive.bootstrap4.css')
+    .styles('resources/views/admin/assets/plugins/datatables-buttons/css/buttons.bootstrap4.css','public/backend/assets/plugins/datatables-buttons/css/buttons.bootstrap4.css')
+
+
     .scripts('resources/views/admin/assets/plugins/jquery/jquery.js', 'public/backend/assets/plugins/jquery/jquery.js')
     .scripts('resources/views/admin/assets/plugins/jquery-ui/jquery-ui.js', 'public/backend/assets/plugins/jquery-ui/jquery-ui.js')
     .scripts('resources/views/admin/assets/plugins/bootstrap/js/bootstrap.bundle.js', 'public/backend/assets/plugins/bootstrap/js/bootstrap.bundle.js')
@@ -30,17 +34,30 @@ mix
     .scripts('resources/views/admin/assets/plugins/sparklines/sparkline.js', 'public/backend/assets/plugins/sparklines/sparkline.js')
     .scripts('resources/views/admin/assets/plugins/jqvmap/jquery.vmap.js', 'public/backend/assets/plugins/jqvmap/jquery.vmap.js')
     .scripts('resources/views/admin/assets/plugins/jqvmap/maps/jquery.vmap.usa.js', 'public/backend/assets/plugins/jqvmap/maps/jquery.vmap.usa.js')
-    .scripts('resources/views/admin/assets/plugins/jquery-knob/jquery.knob.js', 'public/backend/assets/plugins/jquery-knob/jquery.knob.js')
+    .scripts('resources/views/admin/assets/plugins/jquery-knob/jquery.knob.min.js', 'public/backend/assets/plugins/jquery-knob/jquery.knob.min.js')
     .scripts('resources/views/admin/assets/plugins/moment/moment.min.js', 'public/backend/assets/plugins/moment/moment.min.js')
     .scripts('resources/views/admin/assets/plugins/moment/moment.min.js.map', 'public/backend/assets/plugins/moment/moment.min.js.map')
     .scripts('resources/views/admin/assets/plugins/daterangepicker/daterangepicker.js', 'public/backend/assets/plugins/daterangepicker/daterangepicker.js')
     .scripts('resources/views/admin/assets/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.js', 'public/backend/assets/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.js')
     .scripts('resources/views/admin/assets/plugins/summernote/summernote-bs4.js', 'public/backend/assets/plugins/summernote/summernote-bs4.js')
     .scripts('resources/views/admin/assets/plugins/summernote/summernote-bs4.js.map', 'public/backend/assets/plugins/summernote/summernote-bs4.js.map')
-    .scripts('resources/views/admin/assets/plugins/plugins/overlayScrollbars/js/jquery.overlayScrollbars.js', 'public/backend/assets/plugins/plugins/overlayScrollbars/js/jquery.overlayScrollbars.js')
+    .scripts('resources/views/admin/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.js', 'public/backend/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.js')
 
-    .scripts('resources/views/admin/assets/js/tinymce/tinymce.min.js', 'public/backend/assets/js/tinymce/tinymce.min.js')
-    
+    .scripts('resources/views/admin/assets/plugins/datatables/jquery.dataTables.js', 'public/backend/assets/plugins/datatables/jquery.dataTables.js')
+    .scripts('resources/views/admin/assets/plugins/datatables-bs4/js/dataTables.bootstrap4.js', 'public/backend/assets/plugins/datatables-bs4/js/dataTables.bootstrap4.js')
+    .scripts('resources/views/admin/assets/plugins/datatables-responsive/js/dataTables.responsive.js', 'public/backend/assets/plugins/datatables-responsive/js/dataTables.responsive.js')
+    .scripts('resources/views/admin/assets/plugins/datatables-responsive/js/responsive.bootstrap4.js', 'public/backend/assets/plugins/datatables-responsive/js/responsive.bootstrap4.js')
+    .scripts('resources/views/admin/assets/plugins/datatables-buttons/js/dataTables.buttons.js', 'public/backend/assets/plugins/datatables-buttons/js/dataTables.buttons.js')
+    .scripts('resources/views/admin/assets/plugins/datatables-buttons/js/buttons.bootstrap4.js', 'public/backend/assets/plugins/datatables-buttons/js/buttons.bootstrap4.js')
+    .scripts('resources/views/admin/assets/plugins/jszip/jszip.js', 'public/backend/assets/plugins/jszip/jszip.js')
+    .scripts('resources/views/admin/assets/plugins/pdfmake/pdfmake.js', 'public/backend/assets/plugins/pdfmake/pdfmake.js')
+    .scripts('resources/views/admin/assets/plugins/pdfmake/vfs_fonts.js', 'public/backend/assets/plugins/pdfmake/vfs_fonts.js')
+    .scripts('resources/views/admin/assets/plugins/datatables-buttons/js/buttons.html5.js', 'public/backend/assets/plugins/datatables-buttons/js/buttons.html5.js')
+    .scripts('resources/views/admin/assets/plugins/datatables-buttons/js/buttons.print.js', 'public/backend/assets/plugins/datatables-buttons/js/buttons.print.js')
+    .scripts('resources/views/admin/assets/plugins/datatables-buttons/js/buttons.colVis.js', 'public/backend/assets/plugins/datatables-buttons/js/buttons.colVis.js')
+
+    .scripts('resources/views/admin/assets/js/pages/dashboard.js', 'public/backend/assets/js/pages/dashboard.js')
+
     .scripts('resources/views/admin/assets/js/adminlte.js', 'public/backend/assets/js/adminlte.js')
     .scripts('resources/views/admin/assets/js/adminlte.min.js', 'public/backend/assets/js/adminlte.min.js')
     .scripts('resources/views/admin/assets/js/adminlte.js.map', 'public/backend/assets/js/adminlte.js.map')
