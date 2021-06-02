@@ -43,6 +43,8 @@ mix
     .scripts('resources/views/admin/assets/plugins/summernote/summernote-bs4.js.map', 'public/backend/assets/plugins/summernote/summernote-bs4.js.map')
     .scripts('resources/views/admin/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.js', 'public/backend/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.js')
 
+    .scripts('resources/views/admin/assets/js/login.js', 'public/backend/assets/js/login.js')
+
     .scripts('resources/views/admin/assets/plugins/datatables/jquery.dataTables.js', 'public/backend/assets/plugins/datatables/jquery.dataTables.js')
     .scripts('resources/views/admin/assets/plugins/datatables-bs4/js/dataTables.bootstrap4.js', 'public/backend/assets/plugins/datatables-bs4/js/dataTables.bootstrap4.js')
     .scripts('resources/views/admin/assets/plugins/datatables-responsive/js/dataTables.responsive.js', 'public/backend/assets/plugins/datatables-responsive/js/dataTables.responsive.js')

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>IMOB | Site Control</title>
 
   <!-- Google Font: Source Sans Pro -->
@@ -15,7 +16,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ url(mix('backend/assets/css/adminlte.css')) }}">
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page">  
 <div class="login-box">
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
@@ -25,9 +26,9 @@
     <div class="card-body">
       <p class="login-box-msg">Faça login para iniciar sua sessão</p>
 
-      <form action="#" method="post">
+      <form name="login" action="{{ route('admin.login.do') }}" method="post" autocomplete="off">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="E-mail">
+          <input type="email" name="email" class="form-control" placeholder="E-mail">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -35,13 +36,14 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Senha">
+          <input type="password" name="password" class="form-control" placeholder="Senha">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
             </div>
           </div>
         </div>
+        <div class="ajax_response"></div>
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
@@ -71,6 +73,8 @@
 
 <!-- jQuery -->
 <script src="{{ url(mix('backend/assets/plugins/jquery/jquery.js')) }}"></script>
+<!-- Login -->
+<script src="{{ url(mix('backend/assets/js/login.js')) }}"></script>
 <!-- Bootstrap 4 -->
 <script src="{{ url(mix('backend/assets/plugins/bootstrap/js/bootstrap.bundle.js')) }}"></script>
 <!-- AdminLTE App -->
