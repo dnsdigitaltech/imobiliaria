@@ -13,6 +13,7 @@ $(function(){
         const email = form.find('input[name="email"]').val();
         const password = form.find('input[name="password"]').val();
         $.post(action, {email: email, password: password}, function(response){
+            console.log(response);
             if(response.message){
                 ajaxMessage(response.message, 3)
             }
