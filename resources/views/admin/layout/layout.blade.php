@@ -32,6 +32,9 @@
    <link rel="stylesheet" href="{{ url(mix('backend/assets/plugins/datatables-bs4/css/dataTables.bootstrap4.css')) }}">
    <link rel="stylesheet" href="{{ url(mix('backend/assets/plugins/datatables-responsive/css/responsive.bootstrap4.css')) }}">
    <link rel="stylesheet" href="{{ url(mix('backend/assets/plugins/datatables-buttons/css/buttons.bootstrap4.css')) }}">
+  @hasSection('css')
+    @yield('css')
+  @endif
 </head>
 <body class="sidebar-mini layout-fixed control-sidebar-slide-open layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
@@ -374,6 +377,8 @@
     });
   });
 </script>
-
+@hasSection('js')
+  @yield('js')
+@endif
 </body>
 </html>
